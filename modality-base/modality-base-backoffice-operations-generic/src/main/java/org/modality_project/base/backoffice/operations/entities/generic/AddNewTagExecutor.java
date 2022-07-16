@@ -32,8 +32,7 @@ final class AddNewTagExecutor {
         String domainClassName = firstEntity.getDomainClass().getName();
         insertEntity.setName(generateDefaultName(domainClassName));
         insertEntity.setClassId(domainClassName);
-        System.out.println("insertEntity.id =" + insertEntity.getId());
-        EntityPropertiesSheet.editEntity(insertEntity, "id,name,classId", parentContainer);
+        EntityPropertiesSheet.editEntity(insertEntity, "name", parentContainer);
         return Future.succeededFuture();
     }
 
