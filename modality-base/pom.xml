@@ -23,7 +23,7 @@
         <module>modality-base-backoffice-multilangeditor</module>
         <module>modality-base-backoffice-operations-filters</module>
         <module>modality-base-backoffice-operations-generic</module>
-        <module>modality-base-backoffice-operations-snapshot</module>
+        <module>modality-base-backoffice-operations-tag</module>
         <module>modality-base-client-activity</module>
         <module>modality-base-client-aggregates</module>
         <module>modality-base-client-application</module>

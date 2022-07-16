@@ -33,7 +33,7 @@
         <provider interface="dev.webfx.stack.orm.entity.EntityFactoryProvider">org.modality_project.base.shared.entities.impl.PersonImpl$ProvidedFactory</provider>
         <provider interface="dev.webfx.stack.orm.entity.EntityFactoryProvider">org.modality_project.base.shared.entities.impl.RateImpl$ProvidedFactory</provider>
         <provider interface="dev.webfx.stack.orm.entity.EntityFactoryProvider">org.modality_project.base.shared.entities.impl.SiteImpl$ProvidedFactory</provider>
-        <provider interface="dev.webfx.stack.orm.entity.EntityFactoryProvider">org.modality_project.base.shared.entities.impl.SnapshotImpl$ProvidedFactory</provider>
+        <provider interface="dev.webfx.stack.orm.entity.EntityFactoryProvider">org.modality_project.base.shared.entities.impl.TagImpl$ProvidedFactory</provider>
         <provider interface="dev.webfx.stack.orm.entity.EntityFactoryProvider">org.modality_project.base.shared.entities.impl.SystemMetricsEntityImpl$ProvidedFactory</provider>
         <provider interface="dev.webfx.stack.orm.entity.EntityFactoryProvider">org.modality_project.base.shared.entities.impl.TeacherImpl$ProvidedFactory</provider>
     </providers>

@@ -23,7 +23,7 @@ import org.modality_project.ecommerce.backoffice.operations.entities.document.se
 import org.modality_project.ecommerce.backoffice.operations.entities.document.security.ToggleMarkDocumentAsVerifiedRequest;
 import org.modality_project.ecommerce.backoffice.operations.routes.bookings.RouteToNewBackOfficeBookingRequest;
 import org.modality_project.event.backoffice.operations.routes.cloneevent.RouteToCloneEventRequest;
-import org.modality_project.base.backoffice.operations.entities.generic.AddNewSnapshotRequest;
+import org.modality_project.base.backoffice.operations.entities.generic.AddNewTagRequest;
 import org.modality_project.base.client.activity.eventdependent.EventDependentViewDomainActivity;
 import org.modality_project.base.shared.entities.Document;
 
@@ -90,10 +90,8 @@ final class BookingsActivity extends EventDependentViewDomainActivity implements
 
     // TODO move this into an interface
     private ActionGroup newSnapshotActionGroup(Pane container) {
-        //List<Document> selectedEntities = masterVisualMapper.getSelectedEntities();
-        //System.out.println("selectedEntities.size() = " + selectedEntities.size());
         return newActionGroup("Snapshot", true,
-                newOperationAction(() -> new AddNewSnapshotRequest(masterVisualMapper.getSelectedEntities(), pm.getSelectedMaster().getOrganization(), container),  pm.selectedDocumentProperty()));
+                newOperationAction(() -> new AddNewTagRequest(masterVisualMapper.getSelectedEntities(), container), pm.selectedDocumentProperty()));
     }
 
     @Override

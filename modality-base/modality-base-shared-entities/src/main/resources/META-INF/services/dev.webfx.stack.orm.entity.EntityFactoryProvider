@@ -25,6 +25,6 @@ org.modality_project.base.shared.entities.impl.OrganizationTypeImpl$ProvidedFact
 org.modality_project.base.shared.entities.impl.PersonImpl$ProvidedFactory
 org.modality_project.base.shared.entities.impl.RateImpl$ProvidedFactory
 org.modality_project.base.shared.entities.impl.SiteImpl$ProvidedFactory
-org.modality_project.base.shared.entities.impl.SnapshotImpl$ProvidedFactory
+org.modality_project.base.shared.entities.impl.TagImpl$ProvidedFactory
 org.modality_project.base.shared.entities.impl.SystemMetricsEntityImpl$ProvidedFactory
 org.modality_project.base.shared.entities.impl.TeacherImpl$ProvidedFactory

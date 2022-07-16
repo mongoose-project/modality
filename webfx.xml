@@ -280,7 +280,7 @@
                 <module>modality-base-backoffice-multilangeditor</module>
                 <module>modality-base-backoffice-operations-filters</module>
                 <module>modality-base-backoffice-operations-generic</module>
-                <module>modality-base-backoffice-operations-snapshot</module>
+                <module>modality-base-backoffice-operations-tag</module>
                 <module>modality-base-client-activity</module>
                 <module>modality-base-client-aggregates</module>
                 <module>modality-base-client-application</module>
@@ -590,7 +590,7 @@
 
         </project>
 
-        <project name="modality-base-backoffice-operations-snapshot">
+        <project name="modality-base-backoffice-operations-tag">
 
             <exported-packages>
                 <source-packages/>
@@ -604,7 +604,7 @@
             </dependencies>
 
             <source-packages>
-                <package>org.modality_project.base.backoffice.operations.snapshot</package>
+                <package>org.modality_project.base.backoffice.operations.tag</package>
             </source-packages>
 
             <used-by-source-modules>
@@ -1476,7 +1476,7 @@
                 <provider interface="dev.webfx.stack.orm.entity.EntityFactoryProvider">org.modality_project.base.shared.entities.impl.PersonImpl$ProvidedFactory</provider>
                 <provider interface="dev.webfx.stack.orm.entity.EntityFactoryProvider">org.modality_project.base.shared.entities.impl.RateImpl$ProvidedFactory</provider>
                 <provider interface="dev.webfx.stack.orm.entity.EntityFactoryProvider">org.modality_project.base.shared.entities.impl.SiteImpl$ProvidedFactory</provider>
-                <provider interface="dev.webfx.stack.orm.entity.EntityFactoryProvider">org.modality_project.base.shared.entities.impl.SnapshotImpl$ProvidedFactory</provider>
+                <provider interface="dev.webfx.stack.orm.entity.EntityFactoryProvider">org.modality_project.base.shared.entities.impl.TagImpl$ProvidedFactory</provider>
                 <provider interface="dev.webfx.stack.orm.entity.EntityFactoryProvider">org.modality_project.base.shared.entities.impl.SystemMetricsEntityImpl$ProvidedFactory</provider>
                 <provider interface="dev.webfx.stack.orm.entity.EntityFactoryProvider">org.modality_project.base.shared.entities.impl.TeacherImpl$ProvidedFactory</provider>
             </providers>
