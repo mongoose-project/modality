@@ -4,9 +4,10 @@ import dev.webfx.stack.orm.entity.controls.entity.sheet.EntityPropertiesSheet;
 import dev.webfx.stack.orm.entity.Entity;
 import dev.webfx.stack.orm.entity.UpdateStore;
 import dev.webfx.stack.async.Future;
+import dev.webfx.stack.ui.controls.dialog.DialogContent;
+import dev.webfx.stack.ui.controls.dialog.DialogUtil;
 import javafx.scene.layout.Pane;
 import org.modality_project.base.shared.entities.Tag;
-import org.modality_project.base.shared.entities.MoneyAccount;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -21,8 +22,11 @@ final class AddNewTagExecutor {
 
     private static <E extends Entity> Future<Void> execute(Collection<E> entities, Pane parentContainer) {
         if (entities == null || entities.isEmpty()) {
-            // TODO show popup
-            System.out.println("entities null or empty.");
+            DialogContent dialogContent = new DialogContent().setContentText("Please select one or more rows to be tagged.");
+            DialogUtil.showModalNodeInGoldLayout(dialogContent, parentContainer);
+            DialogUtil.armDialogContentButtons(dialogContent, dialogCallback -> {
+                dialogCallback.closeDialog();
+            });
             return Future.succeededFuture();
         }
 
@@ -41,7 +45,6 @@ final class AddNewTagExecutor {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
         String dateTime = dtf.format(now);
-
         return domainClassName + " " + dateTime;
     }
 }
