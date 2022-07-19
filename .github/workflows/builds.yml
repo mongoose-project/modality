@@ -25,7 +25,7 @@ name: Multi-OS builds
 
 on:
   push:
-    branches: [ main ]
+    branches: [ demo ]
   pull_request:
      branches: [ main ]
 
