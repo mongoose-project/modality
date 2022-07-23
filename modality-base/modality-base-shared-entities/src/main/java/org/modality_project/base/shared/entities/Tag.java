@@ -5,6 +5,9 @@ import org.modality_project.base.shared.entities.markers.EntityHasName;
 
 import java.time.LocalDate;
 
+/**
+ * @author Dan Newman
+ */
 public interface Tag extends
         EntityHasName,
         EntityHasIcon {
